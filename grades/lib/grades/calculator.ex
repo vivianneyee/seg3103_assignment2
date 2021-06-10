@@ -26,7 +26,7 @@ defmodule Grades.Calculator do
 
     avg_labs = avg(labs)
 
-    avg_exams = (midterm + final) / 2
+    avg_exams = avg([midterm, final])
 
     num_labs =
       labs
@@ -59,7 +59,7 @@ defmodule Grades.Calculator do
 
     avg_labs = avg(labs)
 
-    avg_exams = (midterm + final) / 2
+    avg_exams = avg([midterm, final])
 
     num_labs =
       labs
